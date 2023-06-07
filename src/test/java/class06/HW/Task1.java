@@ -15,12 +15,13 @@ public class Task1 extends CommonMethods {
         String browser="chrome";
         openBrowserAndLaunchApplication(url, browser);
         driver.manage().window().maximize();
-        Thread.sleep(2000);
+
 
         WebElement Btn=driver.findElement(By.xpath("//button[@id='startButton']"));
         Btn.click();
 
         WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
+
         WebElement textMes=driver.findElement(By.xpath("//h4[text()='Welcome Syntax Technologies']"));
         wait.until(ExpectedConditions.textToBePresentInElement(textMes, "Welcome Syntax Technologies"));
         System.out.println(textMes.getText());
