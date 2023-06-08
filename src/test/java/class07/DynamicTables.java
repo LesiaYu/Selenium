@@ -11,7 +11,7 @@ import java.util.List;
 public class DynamicTables extends CommonMethods {
     public static void main(String[] args) {
 
-        String url="http://hrm.syntax//input[@name='txtUsername']techs.net/humanresources/symfony/web/index.php/dashboard";
+        String url="http://hrm.syntax/humanresources/symfony/web/index.php/dashboard";
         String browser="chrome";
         openBrowserAndLaunchApplication(url, browser);
 
